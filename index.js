@@ -138,11 +138,17 @@ app.get('/refresh', async (req, res) => {
   } 
 });
 
-const PORT = process.env.PORT || 3000;
-  
+const express = require("express");
+const app = express();
+
+async function startApp() {
+  try {
+    const PORT = process.env.PORT || 3000;
+
     app.listen(PORT, () => {
-  console.log(`Server started on port ${PORT}`);
+      console.log(`Server started on port ${PORT}`);
     });
+
   } catch (err) {
     console.error(`Error starting the application: ${err.message}`);
     process.exit(1);
