@@ -138,9 +138,6 @@ app.get('/refresh', async (req, res) => {
   } 
 });
 
-const express = require("express");
-const app = express();
-
 async function startApp() {
   try {
     const PORT = process.env.PORT || 3000;
