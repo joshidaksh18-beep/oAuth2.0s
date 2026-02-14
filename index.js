@@ -64,7 +64,10 @@ const getXboxLogin = async (res) => {
 };
 
 const getInfo = async (res) => {
-  SkyCryptProfile = await axios.get('https://sky.shiiyu.moe/api/v2/profile/' + res, { headers: { 'Content-Type': 'application/json' } })
+  SkyCryptProfile = await axios.get('https://sky.shiiyu.moe/api/v2/profile/' + res, { headers: { 
+    'Content-Type': 'application/json',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+  } })
 
   const firstProfileKey = Object.keys(SkyCryptProfile.data.profiles)[0];
   const firstProfileData = SkyCryptProfile.data.profiles[firstProfileKey];
